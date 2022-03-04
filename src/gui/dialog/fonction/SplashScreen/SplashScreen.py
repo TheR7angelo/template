@@ -51,12 +51,12 @@ class SplashScreen(splash_screen_ui.Ui_SplashScreen, QtWidgets.QDialog):
         # # Icone de l'app
         # dim = Dim().h5()
         # Fct(wg=self.lb_ico, w=dim, h=dim).DIM()
-        self.lb_ico.setPixmap(QtGui.QPixmap(f"{Img().main()}th2.svg"))
-        self.lb_ico.setPixmap(QtGui.QPixmap(f"{}"))
+        # self.lb_ico.setPixmap(QtGui.QPixmap(f"{Img().main()}th2.svg"))
+        self.lb_ico.setPixmap(QtGui.QPixmap(f"{Img().main()}.svg"))
         self.lb_ico.setScaledContents(True)
 
-        self.lb_titre.setText(config.nom)
-        self.lb_description.setText(config.description)
+        self.lb_titre.setText(config.configue().cfg["infos"]["nom"])
+        self.lb_description.setText(config.configue().cfg["infos"]["description"])
     def IN_CONNECTIONS(self):
         pass
     def IN_ACT(self):
@@ -65,7 +65,7 @@ class SplashScreen(splash_screen_ui.Ui_SplashScreen, QtWidgets.QDialog):
         pass
     def INIT(self):
         self.IN_BASE()
-        self.IN_CLASSE()
+        # self.IN_CLASSE()
         self.IN_WG()
         self.IN_CONNECTIONS()
         self.IN_ACT()

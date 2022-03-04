@@ -1,6 +1,4 @@
-from ...config import vrb
-
-from src.config import variable_base
+from src.config import *
 
 class Cur:
     def __init__(self):
@@ -27,8 +25,8 @@ class Cur:
             "wait": self.wait,
         }
 
-    def CUR(self, img): return f"{variable_base.do_cur}/{config.cur}/{img}.cur"
-    def ANI(self, img): return f"{variable_base.do_cur}/{config.cur}/{img}.ani"
+    def CUR(self, img): return f"{variable_base.do_cur}/{config.configue().cfg['config']['curseur']}/{img}.cur"
+    def ANI(self, img): return f"{variable_base.do_cur}/{config.configue().cfg['config']['curseur']}/{img}.ani"
     def RTN_CUR(self, cur="souris"): return self.dct.get(cur)()
 
 

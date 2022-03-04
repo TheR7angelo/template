@@ -28,13 +28,13 @@ class main(Ui_mainWindow, QtWidgets.QMainWindow):
 
         self.setupUi(self)
 
-        self.setup()
+        # self.setup()
 
-        self.show()
+        # self.show()
 
-    def setup(self, *args):
-        for fct in args:
-            splash_screen
+    # def setup(self, *args):
+    #     for fct in args:
+    #         splash_screen
 
 
 ico_logo = f"{Img().main()}.svg"
