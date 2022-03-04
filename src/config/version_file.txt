@@ -33,10 +33,10 @@ VSVersionInfo(
         [StringStruct(u'CompanyName', u'ZP6177'),
         StringStruct(u'FileDescription', u'Je suis un test de description'),
         StringStruct(u'FileVersion', u'0.0.0.0'),
-        StringStruct(u'InternalName', u'Je suis un test de nommage'),
+        StringStruct(u'InternalName', u'template'),
         StringStruct(u'LegalCopyright', u''),
-        StringStruct(u'OriginalFilename', u'Je suis un test de nommage.exe'),
-        StringStruct(u'ProductName', u'Je suis un test de nommage'),
+        StringStruct(u'OriginalFilename', u'template.exe'),
+        StringStruct(u'ProductName', u'template'),
         StringStruct(u'ProductVersion', u'0.0.0.0')])
       ]), 
     VarFileInfo([VarStruct(u'Translation', [1033, 1200])])

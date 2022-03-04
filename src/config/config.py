@@ -39,7 +39,13 @@ class configue:
     def get(self):
         return self.cfg
 
-    def update(self, section, clef, valeur):
+    def update(self, section: str, clef: str, valeur: str):
+        """
+        :param section: infos || config
+        :param clef: nom | description | version | auteur | compagnie || curseur | theme
+        :param valeur: string
+        :return: None
+        """
         with open(cfg_config, "r+") as output:
             self.cfg[section][clef] = valeur
             output.seek(0)
