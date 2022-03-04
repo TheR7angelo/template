@@ -1,0 +1,16 @@
+{
+    "infos": {
+        "nom": "Je suis un test de nommage",
+        "description": "Je suis un test de description",
+        "version": "0.0",
+        "auteur": "ZP6177",
+        "compagnie": "ZP6177"
+    },
+    "config": {
+        "curseur": "LaM0uette",
+        "theme": "defaut"
+    },
+    "variable": {
+        "auto_reload": true
+    }
+}

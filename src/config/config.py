@@ -15,7 +15,8 @@ class configue:
                           "auteur": "ZP6177",
                           "compagnie": "ZP6177"},
                 "config": {"curseur": "LaM0uette",
-                           "theme": "defaut"}
+                           "theme": "defaut"},
+                "variable": {"auto_reload": False}
             }
             with open(cfg_config, "w") as output:
                 json.dump(self.cfg, output, indent=4)
@@ -39,11 +40,11 @@ class configue:
     def get(self):
         return self.cfg
 
-    def update(self, section: str, clef: str, valeur: str):
+    def update(self, section: str, clef: str, valeur):
         """
-        :param section: infos || config
-        :param clef: nom | description | version | auteur | compagnie || curseur | theme
-        :param valeur: string
+        :param section: infos || config || variable
+        :param clef: nom | description | version | auteur | compagnie || curseur | theme || auto_reload
+        :param valeur: string || string || bool
         :return: None
         """
         with open(cfg_config, "r+") as output:
