@@ -19,16 +19,16 @@ from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QPushButton, QSizePolicy, QSpacerItem, QVBoxLayout,
     QWidget)
 
-class Ui_main(object):
-    def setupUi(self, main):
-        if not main.objectName():
-            main.setObjectName(u"main")
-        main.resize(841, 792)
-        self.vlay_main = QVBoxLayout(main)
+class Ui_mainWindow(object):
+    def setupUi(self, mainWindow):
+        if not mainWindow.objectName():
+            mainWindow.setObjectName(u"mainWindow")
+        mainWindow.resize(841, 792)
+        self.vlay_main = QVBoxLayout(mainWindow)
         self.vlay_main.setSpacing(0)
         self.vlay_main.setObjectName(u"vlay_main")
         self.vlay_main.setContentsMargins(0, 0, 0, 0)
-        self.fr_main = QFrame(main)
+        self.fr_main = QFrame(mainWindow)
         self.fr_main.setObjectName(u"fr_main")
         self.fr_main.setFrameShape(QFrame.StyledPanel)
         self.fr_main.setFrameShadow(QFrame.Raised)
@@ -125,12 +125,12 @@ class Ui_main(object):
         self.vlay_main.addWidget(self.fr_main)
 
 
-        self.retranslateUi(main)
+        self.retranslateUi(mainWindow)
 
-        QMetaObject.connectSlotsByName(main)
+        QMetaObject.connectSlotsByName(mainWindow)
     # setupUi
 
-    def retranslateUi(self, main):
+    def retranslateUi(self, mainWindow):
         pass
     # retranslateUi
 

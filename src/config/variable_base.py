@@ -10,6 +10,7 @@ date_now_format = date_now.strftime("%d/%m/%Y")
 do_img_ui = "src/assets/ui"
 do_img_logo = "src/assets/img/logo"
 do_img_divers = "src/assets/img/divers"
+do_img = "src/assets"
 do_cur = "src/assets/cursor"
 do_script = "src/scripts"
 
