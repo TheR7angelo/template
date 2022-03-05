@@ -28,25 +28,24 @@ class main(Ui_mainWindow, QtWidgets.QMainWindow):
 
         self.setupUi(self)
 
-        # self.setup()
+        self.setup()
 
-        # self.show()
+    def setup(self, *args):
 
-    # def setup(self, *args):
-    #     for fct in args:
-    #         splash_screen
+        self.setCursor(Fct(cur=Cur().wait()).CUR())
+
+        # for fct in args:
+        #     splash_screen
 
 
 ico_logo = f"{Img().main()}.svg"
 app = QtWidgets.QApplication(sys.argv)
-# splash = QtWidgets.QSplashScreen(QtGui.QPixmap(ico_logo).scaledToHeight(400), QtCore.Qt.WindowStaysOnTopHint)
-# splash.show()
+
 app.processEvents()
 #
 fen = main()
-splash_screen = SplashScreen()
-splash_screen.open()
-# splash.finish(fen)
+# splash_screen = SplashScreen()
+# splash_screen.open()
 fen.show()
 #
 sys.exit(app.exec())

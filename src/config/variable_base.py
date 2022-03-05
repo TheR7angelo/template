@@ -16,5 +16,5 @@ do_script = "src/scripts"
 
 ### FICHIERS
 cfg_config = "src/config/config.json"
-version_file = "src/config/version_file.txt"
-
+# version_file = "src/config/version_file.txt"
+version_file = "version_file.txt"

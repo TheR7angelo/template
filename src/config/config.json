@@ -11,6 +11,6 @@
         "theme": "defaut"
     },
     "variable": {
-        "auto_reload": true
+        "auto_reload": false
     }
 }

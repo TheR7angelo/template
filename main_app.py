@@ -10,7 +10,7 @@ import time
 if __name__ == "__main__":
     run = False
 
-    config.configue().update(section="variable", clef="auto_reload", valeur=True)
+    config.configue().update(section="variable", clef="auto_reload", valeur=False)
 
     for proc in psutil.process_iter():
         pi = proc.as_dict(attrs=["pid", "name"])
