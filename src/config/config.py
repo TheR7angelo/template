@@ -14,7 +14,7 @@ class configue:
                           "version": "0.0",
                           "auteur": "ZP6177",
                           "compagnie": "ZP6177"},
-                "config": {"curseur": "LaM0uette",
+                "config": {"curseur": "TheR7angelo",
                            "theme": "defaut"},
                 "variable": {"auto_reload": False}
             }

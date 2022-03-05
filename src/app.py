@@ -32,7 +32,7 @@ class main(Ui_mainWindow, QtWidgets.QMainWindow):
 
     def setup(self, *args):
 
-        self.setCursor(Fct(cur=Cur().wait()).CUR())
+        self.setCursor(Fct(cur=Cur().Arrow()).CUR())
 
         # for fct in args:
         #     splash_screen

@@ -1,3 +1,5 @@
+import os.path
+
 from PySide6 import QtCore, QtGui
 
 from src.build import *
@@ -10,8 +12,35 @@ class Fct:
         self.kwargs = kwargs
 
     def CUR(self):
+
+        cursor = {
+            "Arrow": QtGui.QCursor(QtCore.Qt.ArrowCursor),
+            "Busy": QtGui.QCursor(QtCore.Qt.BusyCursor),
+            "CloseHand": QtGui.QCursor(QtCore.Qt.ClosedHandCursor),
+            "DragCopy": QtGui.QCursor(QtCore.Qt.DragCopyCursor),
+            "DragLink": QtGui.QCursor(QtCore.Qt.DragLinkCursor),
+            "DragMove": QtGui.QCursor(QtCore.Qt.DragMoveCursor),
+            "Forbidden": QtGui.QCursor(QtCore.Qt.ForbiddenCursor),
+            "IBeam": QtGui.QCursor(QtCore.Qt.IBeamCursor),
+            "OpenHand": QtGui.QCursor(QtCore.Qt.OpenHandCursor),
+            "PointingHand": QtGui.QCursor(QtCore.Qt.PointingHandCursor),
+            "SizeAll": QtGui.QCursor(QtCore.Qt.SizeAllCursor),
+            "SizeBDiag": QtGui.QCursor(QtCore.Qt.SizeBDiagCursor),
+            "SizeFDiag": QtGui.QCursor(QtCore.Qt.SizeFDiagCursor),
+            "SizeHor": QtGui.QCursor(QtCore.Qt.SizeHorCursor),
+            "SizeVer": QtGui.QCursor(QtCore.Qt.SizeVerCursor),
+            "SplitH": QtGui.QCursor(QtCore.Qt.SplitHCursor),
+            "SplitV": QtGui.QCursor(QtCore.Qt.SplitVCursor),
+            "UpArrow": QtGui.QCursor(QtCore.Qt.UpArrowCursor),
+            "Wait": QtGui.QCursor(QtCore.Qt.WaitCursor),
+            "WhatsThis": QtGui.QCursor(QtCore.Qt.WhatsThisCursor)
+        }
         cur = self.kwargs.get("cur")
-        if cur is None: cur = Cur().souris()
+        if cur[0] is None:
+            cur = Cur().souris()
+        elif ".ani" in cur[0]:
+            cur = os.path.split(cur[0])[1].split(".")[0]
+            return cursor[cur]
         return QtGui.QCursor(QtGui.QPixmap(cur[0]), cur[1], cur[2])
     # def DIM(self):
     #     wg = self.kwargs.get("wg")
