@@ -1,1 +1,1 @@
-from src.gui.dialog.fonction.SplashScreen import SplashScreen
+from src.gui.dialog.fonction.SplashScreen.SplashScreen import SplashScreen

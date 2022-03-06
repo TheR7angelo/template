@@ -28,24 +28,38 @@ class main(Ui_mainWindow, QtWidgets.QMainWindow):
 
         self.setupUi(self)
 
-        self.setup()
+        self.setup(
+            [self.setup_test, "test"]
+        )
+        splash_screen.close()
+
+    def setup_test(self):
+        print("test")
 
     def setup(self, *args):
 
         self.setCursor(Fct(cur=Cur().Arrow()).CUR())
 
-        # for fct in args:
-        #     splash_screen
+        for fct in args:
+            splash_screen.lb_chargement.setText(fct[1])
+            splash_screen.pg_chargement.setValue(splash_screen.pg_chargement.value() + 100 / len(args))
+
+            fct[0]()
+
+        splash_screen.lb_chargement.setText("Lancement de l'application")
+        splash_screen.pg_chargement.setValue(100)
+        time.sleep(10)
 
 
 ico_logo = f"{Img().main()}.svg"
 app = QtWidgets.QApplication(sys.argv)
 
+splash_screen = SplashScreen()
+splash_screen.open()
+
 app.processEvents()
-#
+
 fen = main()
-# splash_screen = SplashScreen()
-# splash_screen.open()
 fen.show()
-#
+
 sys.exit(app.exec())

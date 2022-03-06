@@ -3,6 +3,7 @@ from PySide6 import QtCore, QtWidgets, QtGui
 from src.gui.dialog.interface import splash_screen_ui
 from src.build import *
 from src.config import *
+from src.build.functions import Img
 
 
 class SplashScreen(splash_screen_ui.Ui_SplashScreen, QtWidgets.QDialog):
@@ -14,7 +15,7 @@ class SplashScreen(splash_screen_ui.Ui_SplashScreen, QtWidgets.QDialog):
         self.opacity = 1
 
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.Tool)
-        self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
+        # self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.setWindowModality(QtCore.Qt.ApplicationModal)
 
         self.setupUi(self)
@@ -46,13 +47,15 @@ class SplashScreen(splash_screen_ui.Ui_SplashScreen, QtWidgets.QDialog):
     #     ### /QProgressBar ###
     def IN_WG(self):
         # Base
-        # self.setCursor(Fct(cur=Cur().souris()).CUR())
-        #
-        # # Icone de l'app
-        # dim = Dim().h5()
+        self.setCursor(Fct(cur=Cur().Wait()).CUR())
+
+        # Icone de l'app
+        dim = Dim().h5()
         # Fct(wg=self.lb_ico, w=dim, h=dim).DIM()
-        # self.lb_ico.setPixmap(QtGui.QPixmap(f"{Img().main()}th2.svg"))
-        self.lb_ico.setPixmap(QtGui.QPixmap(f"{Img().main()}.svg"))
+        self.lb_ico.setPixmap(QtGui.QPixmap(f"{variable_base.do_img_logo}/inari.svg"))
+        self.lb_ico.setFixedWidth(200)
+        self.lb_ico.setFixedHeight(200)
+
         self.lb_ico.setScaledContents(True)
 
         self.lb_titre.setText(config.configue().cfg["infos"]["nom"])

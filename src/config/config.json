@@ -8,7 +8,7 @@
     },
     "config": {
         "curseur": "TheR7angelo",
-        "theme": "defaut"
+        "theme": "default"
     },
     "variable": {
         "auto_reload": false

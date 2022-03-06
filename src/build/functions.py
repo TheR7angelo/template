@@ -37,7 +37,7 @@ class Fct:
         }
         cur = self.kwargs.get("cur")
         if cur[0] is None:
-            cur = Cur().souris()
+            cur = Cur().Arrow()
         elif ".ani" in cur[0]:
             cur = os.path.split(cur[0])[1].split(".")[0]
             return cursor[cur]
