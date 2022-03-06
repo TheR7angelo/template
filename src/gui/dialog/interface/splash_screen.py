@@ -30,6 +30,7 @@ class Ui_SplashScreen(object):
         self.verticalLayout.setContentsMargins(10, 10, 10, 10)
         self.fr_main = QFrame(SplashScreen)
         self.fr_main.setObjectName(u"fr_main")
+        self.fr_main.setStyleSheet(u"")
         self.fr_main.setFrameShape(QFrame.StyledPanel)
         self.fr_main.setFrameShadow(QFrame.Raised)
         self.vlay_fr_main = QVBoxLayout(self.fr_main)
@@ -67,6 +68,7 @@ class Ui_SplashScreen(object):
 
         self.lb_chargement = QLabel(self.fr_main)
         self.lb_chargement.setObjectName(u"lb_chargement")
+        self.lb_chargement.setAlignment(Qt.AlignCenter)
 
         self.vlay_fr_main.addWidget(self.lb_chargement)
 

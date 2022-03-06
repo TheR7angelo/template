@@ -1,12 +1,11 @@
 from PySide6 import QtCore, QtWidgets, QtGui
 
-from src.gui.dialog.interface import splash_screen_ui
+from src.gui.dialog.interface import splash_screen
 from src.build import *
 from src.config import *
-from src.build.functions import Img
 
 
-class SplashScreen(splash_screen_ui.Ui_SplashScreen, QtWidgets.QDialog):
+class SplashScreen(splash_screen.Ui_SplashScreen, QtWidgets.QDialog):
     def __init__(self):
         super(SplashScreen, self).__init__()
 
@@ -15,7 +14,7 @@ class SplashScreen(splash_screen_ui.Ui_SplashScreen, QtWidgets.QDialog):
         self.opacity = 1
 
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.Tool)
-        # self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
+        self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.setWindowModality(QtCore.Qt.ApplicationModal)
 
         self.setupUi(self)
@@ -30,6 +29,17 @@ class SplashScreen(splash_screen_ui.Ui_SplashScreen, QtWidgets.QDialog):
         self.setFixedWidth(self.width)
         self.setFixedHeight(self.height)
         self.setWindowOpacity(self.opacity)
+
+        self.fr_main.setStyleSheet("""
+                                    .QFrame{
+                                    background-color: rgba(255, 151, 75, 200);
+                                    }
+                                    """)
+
+        self.lb_chargement.setAlignment(QtCore.Qt.AlignCenter)
+
+        self.pg_chargement.setAlignment(QtCore.Qt.AlignCenter)
+
     # def IN_CLASSE(self):
     #     ### QFrame ###
     #     Frame.SplashScreen(self.fr_main)
@@ -51,11 +61,8 @@ class SplashScreen(splash_screen_ui.Ui_SplashScreen, QtWidgets.QDialog):
 
         # Icone de l'app
         dim = Dim().h5()
-        # Fct(wg=self.lb_ico, w=dim, h=dim).DIM()
+        Fct(wg=self.lb_ico, w=dim, h=dim).DIM()
         self.lb_ico.setPixmap(QtGui.QPixmap(f"{variable_base.do_img_logo}/inari.svg"))
-        self.lb_ico.setFixedWidth(200)
-        self.lb_ico.setFixedHeight(200)
-
         self.lb_ico.setScaledContents(True)
 
         self.lb_titre.setText(config.configue().cfg["infos"]["nom"])

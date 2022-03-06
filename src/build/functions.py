@@ -42,14 +42,17 @@ class Fct:
             cur = os.path.split(cur[0])[1].split(".")[0]
             return cursor[cur]
         return QtGui.QCursor(QtGui.QPixmap(cur[0]), cur[1], cur[2])
-    # def DIM(self):
-    #     wg = self.kwargs.get("wg")
-    #     if wg is None: return
-    #
-    #     w, h = self.kwargs.get("w"), self.kwargs.get("h")
-    #
-    #     wg.setFixedWidth(w) if w is not None else False
-    #     wg.setFixedHeight(h) if h is not None else False
+
+    def DIM(self):
+        wg = self.kwargs.get("wg")
+        if wg is None:
+            return None
+
+        w, h = self.kwargs.get("w"), self.kwargs.get("h")
+
+        wg.setFixedWidth(w) if w is not None else False
+        wg.setFixedHeight(h) if h is not None else False
+
     # def FONT(self):
     #     font = self.kwargs.get("font")
     #     if font is None: font = config.font

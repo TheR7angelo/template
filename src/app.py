@@ -26,10 +26,10 @@ class main(Ui_mainWindow, QtWidgets.QMainWindow):
         self.tray_menu = QtWidgets.QMenu()
         self.tray_menu.setAttribute(QtCore.Qt.WA_TranslucentBackground)
 
-        self.setupUi(self)
+        # self.setupUi(self)
 
         self.setup(
-            [self.setup_test, "test"]
+            [lambda: self.setupUi(self), "Chargement de l'interface"]
         )
         splash_screen.close()
 
@@ -38,17 +38,20 @@ class main(Ui_mainWindow, QtWidgets.QMainWindow):
 
     def setup(self, *args):
 
-        self.setCursor(Fct(cur=Cur().Arrow()).CUR())
+        self.setCursor(Fct(cur=Cur().Wait()).CUR())
 
         for fct in args:
             splash_screen.lb_chargement.setText(fct[1])
-            splash_screen.pg_chargement.setValue(splash_screen.pg_chargement.value() + 100 / len(args))
+            splash_screen.pg_chargement.setValue((splash_screen.pg_chargement.value() + 100 / len(args))-1)
 
             fct[0]()
+            time.sleep(2)
 
         splash_screen.lb_chargement.setText("Lancement de l'application")
         splash_screen.pg_chargement.setValue(100)
-        time.sleep(10)
+        time.sleep(2)
+
+        self.setCursor(Fct(cur=Cur().Arrow()).CUR())
 
 
 ico_logo = f"{Img().main()}.svg"

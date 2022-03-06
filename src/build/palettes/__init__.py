@@ -1,6 +1,6 @@
 # from src.build.palettes.Align import Align
 from src.build.palettes.cur import Cur
-# from src.build.palettes.Dim import Dim
+from src.build.palettes.dim import Dim
 from src.build.palettes.img import Img
 # from src.build.palettes.SpinButton import SpinButton
 # from src.build.palettes.Font import Font

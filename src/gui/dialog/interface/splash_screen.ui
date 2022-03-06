@@ -28,6 +28,9 @@
    </property>
    <item>
     <widget class="QFrame" name="fr_main">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
      </property>
@@ -93,7 +96,11 @@
        </spacer>
       </item>
       <item>
-       <widget class="QLabel" name="lb_chargement"/>
+       <widget class="QLabel" name="lb_chargement">
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QProgressBar" name="pg_chargement">
