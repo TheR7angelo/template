@@ -1,4 +1,4 @@
-from src.config import config
+from src.config.config import Configue
 from src.lib.palettes import *
 
 
@@ -12,7 +12,7 @@ HEIGHT = Dim().h9()
 ####################
 ##     POLICE     ##
 ####################
-font = config.configue().cfg["config"]["font"]
+font = Configue().cfg["config"]["font"]
 font_size = Font().h4()
 font_size_HD = Font().h3()
 
@@ -24,10 +24,10 @@ font_size_HD = Font().h3()
 # DRAG_DROP_MODE = DragDropMode().no_drag()
 # DROP_ACTION = DropAction().move()
 edit = False
-# FOCUS_POLICY = FocusPolicy().strong_focus()
-# FRAME_SHAPE = FrameShape().no_frame()
-# FRAME_SHADOW = FrameShadow().plain()
-# INSERT_POLICY = InsertPolicy().insert_bottom()
+focus_policy = FocusPolicy().strong_focus()
+frame_shape = FrameShape().no_frame()
+frame_shadow = FrameShadow().plain()
+insert_policy = InsertPolicy().insert_bottom()
 max_visible_items = 10
 no_focus = False
 # SELECTION_BEHAVIOR = SelectionBehavior().row()

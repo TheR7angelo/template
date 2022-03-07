@@ -46,15 +46,10 @@ class Functions:
             return cursor[cur]
         return QtGui.QCursor(QtGui.QPixmap(cur[0]), cur[1], cur[2])
 
-    def DIM(self):
-        wg = self.kwargs.get("wg")
-        if wg is None:
-            return None
-
-        w, h = self.kwargs.get("w"), self.kwargs.get("h")
-
-        wg.setFixedWidth(w) if w is not None else False
-        wg.setFixedHeight(h) if h is not None else False
+    def SET_DIM(self, *args, width=None, height=None):
+        for wg in args:
+            if width is not None: wg.setFixedWidth(width)
+            if height is not None: wg.setFixedHeight(height)
 
     # def FONT(self):
     #     font = self.kwargs.get("font")
@@ -67,6 +62,24 @@ class Functions:
     #     ft.setFamily(font)
     #     ft.setPointSize(font_size)
     #     return ft
+
+    def ADD_QACTION(self, tray, ico=None, ico_rgb=None, txt="", shortcut_txt="", status_tip="", size=None, fct=None, sht_1=None, sht_2=None, sht_3=None):
+        if size is None: size=12
+
+        shortcut = int()
+        if sht_1 is not None: shortcut += sht_1
+        if sht_2 is not None: shortcut += sht_2
+        if sht_3 is not None: shortcut += sht_3
+
+        action = QtGui.QAction(self)
+        action.setIcon(QtGui.QPixmap(f"{ico}{ico_rgb}.svg").scaledToHeight(size))
+        action.setText(txt)
+        action.setShortcut(shortcut_txt)
+        action.setStatusTip(status_tip)
+        action.triggered.connect(fct)
+
+        tray.addAction(action)
+        QtGui.QShortcut(QtGui.QKeySequence(shortcut), self).activated.connect(fct)
 
     def GEN_SVG(self):
         hx1, hx2, hx3, hxbn1, hxbn2 = Rgb().hx_th1(), Rgb().hx_th2(), Rgb().hx_th3(), Rgb().hx_bn1(), Rgb().hx_bn2()
@@ -112,34 +125,3 @@ class Functions:
                                 svgMod.write(data)
                 else:
                     shutil.copyfile(svg, f"{lien_rgb}/{pathlib.Path(svg).stem[:-4]}.svg")
-    # def ICON(self):
-    #     wg, img, dim = self.kwargs.get("wg"), self.kwargs.get("img"), self.kwargs.get("dim")
-    #     if wg is None or img is None or dim is None: return
-    #
-    #     icon = QtGui.QIcon()
-    #     icon.addPixmap(QtGui.QPixmap(f"{img}.svg"), QtGui.QIcon.Normal, QtGui.QIcon.On)
-    #     wg.setIcon(icon)
-    #     wg.setIconSize(QtCore.QSize(dim, dim))
-    # def PIXMAP(self):
-    #     wg, img, dim = self.kwargs.get("wg"), self.kwargs.get("img"), self.kwargs.get("dim")
-    #     if wg is None or img is None or dim is None: return
-    #
-    #     wg.setPixmap(QtGui.QPixmap(f"{img}.svg"))
-    #     wg.setScaledContents(True)
-    # def RGB_HEX(self, rgb):
-    #     return "#" + "%02x%02x%02x" % rgb
-    # def HEX_RGB(self, hex_colors):
-    #     rgb = hex_colors.lstrip('#')
-    #     lv = len(rgb)
-    #     return tuple(int(rgb[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
-    # def QACTION(self, slf, tray, ico, ico_rgb, txt, shortcut, fct, height):
-    #     if height is None : height=12
-    #
-    #     tray.addAction(QtGui.QAction(slf, icon=QtGui.QPixmap(f"{ico}{ico_rgb}.svg").scaledToHeight(height), text=txt, shortcut=shortcut, triggered=fct))
-    # def QSHORTCUT(self, slf, sht_1, sht_2, sht_3, fct):
-    #     shortcut = int()
-    #     if sht_1 is not None: shortcut += sht_1
-    #     if sht_2 is not None: shortcut += sht_2
-    #     if sht_3 is not None: shortcut += sht_3
-    #
-    #     QtGui.QShortcut(QtGui.QKeySequence(shortcut), slf).activated.connect(fct)

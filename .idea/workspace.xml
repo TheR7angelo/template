@@ -5,140 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80cdf0a1-fc69-4079-87f2-5f6f6d58c7fc" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/src/lib/palettes/focusPolicy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/palettes/frameShadow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/palettes/frameShape.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/palettes/insertPolicy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/palettes/keys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/palettes/scroll.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/palettes/styleBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/main/rgb/inaribn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/main/rgb/inaribn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/main/rgb/inaribn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/main/rgb/inaribn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/main/rgb/inarith1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/main/rgb/inarith1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/main/rgb/inarith2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/main/rgb/inarith2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/main/rgb/inarith3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/main/rgb/inarith3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/agrandirbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/agrandirbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/agrandirbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/agrandirbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/agrandirth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/agrandirth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/agrandirth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/agrandirth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/agrandirth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/agrandirth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/alertebn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/alertebn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/alertebn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/alertebn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/alerteth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/alerteth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/alerteth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/alerteth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/alerteth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/alerteth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0_rondbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0_rondbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0_rondbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0_rondbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0_rondth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0_rondth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0_rondth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0_rondth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0_rondth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0_rondth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0bn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0bn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0bn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0bn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0th1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0th1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0th2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0th2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0th3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check0th3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1_rondbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1_rondbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1_rondbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1_rondbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1_rondth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1_rondth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1_rondth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1_rondth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1_rondth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1_rondth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1bn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1bn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1bn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1bn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1th1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1th1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1th2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1th2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1th3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check1th3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2_rondbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2_rondbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2_rondbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2_rondbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2_rondth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2_rondth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2_rondth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2_rondth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2_rondth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2_rondth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2bn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2bn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2bn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2bn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2th1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2th1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2th2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2th2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2th3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/check2th3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/checkbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/checkbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/checkbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/checkbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/checkth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/checkth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/checkth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/checkth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/checkth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/checkth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/copierbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/copierbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/copierbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/copierbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/copierth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/copierth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/copierth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/copierth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/copierth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/copierth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_bottombn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_bottombn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_bottombn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_bottombn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_bottomth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_bottomth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_bottomth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_bottomth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_bottomth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_bottomth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_droitebn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_droitebn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_droitebn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_droitebn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_droiteth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_droiteth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_droiteth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_droiteth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_droiteth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_droiteth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_gauchebn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_gauchebn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_gauchebn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_gauchebn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_gaucheth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_gaucheth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_gaucheth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_gaucheth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_gaucheth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_gaucheth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_topbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_topbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_topbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_topbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_topth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_topth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_topth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_topth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_topth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/fleche_topth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/infobn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/infobn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/infobn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/infobn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/infoth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/infoth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/infoth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/infoth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/infoth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/infoth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/lockbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/lockbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/lockbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/lockbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/lockth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/lockth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/lockth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/lockth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/lockth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/lockth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/moinsbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/moinsbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/moinsbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/moinsbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/moinsth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/moinsth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/moinsth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/moinsth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/moinsth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/moinsth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/optionbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/optionbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/optionbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/optionbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/optionth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/optionth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/optionth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/optionth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/optionth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/optionth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/plusbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/plusbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/plusbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/plusbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/plusth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/plusth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/plusth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/plusth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/plusth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/plusth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/quitterbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/quitterbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/quitterbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/quitterbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/quitterth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/quitterth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/quitterth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/quitterth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/quitterth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/quitterth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/reduirebn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/reduirebn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/reduirebn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/reduirebn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/reduireth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/reduireth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/reduireth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/reduireth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/reduireth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/reduireth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/resizebn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/resizebn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/resizebn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/resizebn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/resizeth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/resizeth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/resizeth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/resizeth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/resizeth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/resizeth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/unlockbn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/unlockbn1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/unlockbn2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/unlockbn2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/unlockth1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/unlockth1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/unlockth2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/unlockth2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/ui/rgb/unlockth3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ui/rgb/unlockth3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/version_file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/vrb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/main/inari.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/main/inari_thc.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/main/rgb/inaribn1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/main/rgb/inari.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/main/rgb/inaribn2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/main/rgb/inarith1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/main/rgb/inarith2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/main/rgb/inarith3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/mods/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/build/mods/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/dlg/SplashScreen/SplashScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/dlg/SplashScreen/SplashScreen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/palettes/cur.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/palettes/cur.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/palettes/img.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/palettes/img.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/palettes/rgb.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/palettes/rgb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/themes/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/default.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/version_file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/palettes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/palettes/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/frame/build.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/frame/build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/frame/frame.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/frame/frame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/vb_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/vb_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/vb_wg.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/vb_wg.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +42,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -172,7 +67,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/gui/ui/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/palettes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -181,11 +76,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\template\src\lib\palettes" />
       <recent name="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\template\src\gui\ui\main" />
       <recent name="C:\Users\ZP6177\Creative Cloud Files\Programmation\Projets Python\template\src\assets\img\divers" />
       <recent name="C:\Users\ZP6177\Creative Cloud Files\Programmation\Projets Python\template\src\assets\img\ui" />
       <recent name="C:\Users\ZP6177\Creative Cloud Files\Programmation\Projets Python\template\src\lib\palettes" />
-      <recent name="C:\Users\ZP6177\Creative Cloud Files\Programmation\Projets Python\template\src\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\template\src\gui\ui\splashScreen" />
@@ -234,7 +129,7 @@
       <updated>1646639227808</updated>
       <workItem from="1646639229732" duration="21221000" />
       <workItem from="1646678219140" duration="296000" />
-      <workItem from="1646678592987" duration="3764000" />
+      <workItem from="1646678592987" duration="6371000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1646680394791</created>
@@ -243,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646680394791</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1646682781137</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646682781137</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,18 +167,7 @@
     <MESSAGE value="init" />
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/build/mods/functions.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/template$main_app.coverage" NAME="main_app Coverage Results" MODIFIED="1646681766117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/template$main_app.coverage" NAME="main_app Coverage Results" MODIFIED="1646685284659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

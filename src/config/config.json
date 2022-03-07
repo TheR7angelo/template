@@ -8,7 +8,11 @@
     },
     "config": {
         "curseur": "TheR7angelo",
-        "theme": "default"
+        "theme": "default",
+        "font": "Berlin Sans FB Demi",
+        "widht": 1200,
+        "height": 800,
+        "opacity": 15
     },
     "variable": {
         "auto_reload": false

@@ -70,8 +70,8 @@ class SplashScreen(splash_screen.Ui_SplashScreen, QtWidgets.QDialog):
 
         # Icone de l'app
         dim = Dim().h5()
-        Functions(wg=self.lb_ico, w=dim, h=dim).DIM()
-        self.lb_ico.setPixmap(QtGui.QPixmap("src/assets/img/main/inari.svg"))
+        Functions().SET_DIM(self.lb_ico, width=dim, height=dim)
+        self.lb_ico.setPixmap(QtGui.QPixmap("src/assets/img/main/inari_thc.svg"))
         self.lb_ico.setScaledContents(True)
 
         self.lb_titre.setText(Configue().cfg["infos"]["nom"])
