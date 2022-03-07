@@ -1,0 +1,1 @@
+from src.gui.ui.main.main import Ui_main

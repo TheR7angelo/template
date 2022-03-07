@@ -2,7 +2,7 @@ import json
 import pyinstaller_versionfile
 import os.path
 
-from src.config.variable_base import cfg_config, version_file
+from src.config.vrb import cfg_config, version_file
 
 
 class configue:
@@ -15,7 +15,11 @@ class configue:
                           "auteur": "ZP6177",
                           "compagnie": "ZP6177"},
                 "config": {"curseur": "TheR7angelo",
-                           "theme": "defaut"},
+                           "theme": "defaut",
+                           "font": "Berlin Sans FB Demi",
+                           "widht": 1200,
+                           "height": 800,
+                           "opacity": 0.96},
                 "variable": {"auto_reload": False}
             }
             with open(cfg_config, "w") as output:

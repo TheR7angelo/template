@@ -1,2 +1,2 @@
 from . import config
-from . import variable_base
+from . import vrb

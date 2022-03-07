@@ -3,9 +3,7 @@ import time
 
 from PySide6 import QtCore, QtWidgets, QtGui
 
-from src.config import *
 from src.gui import *
-from src.build import *
 
 from src.gui.mainWindow import Ui_mainWindow
 
@@ -29,7 +27,7 @@ class main(Ui_mainWindow, QtWidgets.QMainWindow):
         # self.setupUi(self)
 
         self.setup(
-            [lambda: self.setupUi(self), "Chargement de l'interface"]
+            [lambda: self.setupUi(self), "Chargement de l'ui"]
         )
         splash_screen.close()
 
