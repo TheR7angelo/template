@@ -1,6 +1,3 @@
-from src.config import vrb
-
-
 class Img:
 
     def SVG(self, val, img): return f"src/assets/img/{val}/rgb/{img}"

@@ -1,12 +1,12 @@
 import json
 
-from src.config.config import configue
+from src.config.config import Configue
 
 
 class Rgb:
 
     def get_rgb(self, val):
-        with open(fr"src/themes/{configue().cfg['config']['theme']}.json", "r") as fichier:
+        with open(fr"src/themes/{Configue().cfg['config']['theme']}.json", "r") as fichier:
             js = json.load(fichier)
             return tuple(js[val])
 

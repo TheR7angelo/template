@@ -29,7 +29,7 @@ class Cur:
     # }
 
     def CUR(self, img):
-        curseur = f"src/assets/cursor/{config.configue().cfg['config']['curseur']}/{img}"
+        curseur = f"src/assets/cursor/{Configue().cfg['config']['curseur']}/{img}"
         return next(
             (
                 f"{curseur}{ext}"

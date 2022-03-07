@@ -31,6 +31,8 @@ class main(Ui_mainWindow, QtWidgets.QMainWindow):
         )
         splash_screen.close()
 
+        self.show()
+
     def setup_test(self):
         print("test")
 

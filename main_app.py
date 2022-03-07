@@ -16,8 +16,6 @@ class main(Ui_main, QtWidgets.QWidget):
             # size_grip
         self.size_grip = QtWidgets.QSizeGrip(self)
 
-        self.setupUi(self)
-
         #     # tray
         # self.tray = QtWidgets.QSystemTrayIcon(QtGui.QPixmap(f"{Img().main()}th3.svg"), self)
         # self.tray.activated.connect(self.trayActivate)
@@ -32,13 +30,23 @@ class main(Ui_main, QtWidgets.QWidget):
         # self.win_state = QtCore.Qt.WindowNoState
         #
         ### FONCTIONS AU LANCEMENT ###
-        self.setup()
+        self.setup(
+            [self.in_base, "Configuration des éléments principaux"],
+            [lambda: self.setupUi(self), "Initialisation de l'interface graphique"]
+        )
 
         splash_screen.close()
 
-    def setup(self, *args):
-        self.setCursor(Functions(cur=Cur().Wait()).CUR())
+    def in_base(self):
+        ### Fenetre principal ###
+        self.setWindowTitle(Configue().cfg["infos"]["nom"])
+        self.setWindowIcon(QtGui.QPixmap(f"{Img().main()}th3.svg"))
+        self.setWindowOpacity(Configue().cfg["config"]["opacity"])
+        # self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
+        self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
+        #self.e_resize_screen()
 
+    def setup(self, *args):
         for fct in args:
             splash_screen.lb_chargement.setText(fct[1])
             splash_screen.pg_chargement.setValue((splash_screen.pg_chargement.value() + 100 / len(args)) - 1)
@@ -50,8 +58,6 @@ class main(Ui_main, QtWidgets.QWidget):
         splash_screen.pg_chargement.setValue(100)
         time.sleep(2)
 
-        self.setCursor(Functions(cur=Cur().Arrow()).CUR())
-
         #
         # ### CREATION DES EVENT ###
         # self.evt = Event(self)
@@ -62,15 +68,17 @@ class main(Ui_main, QtWidgets.QWidget):
 
 if __name__ == "__main__":
 
-    config.configue().update(section="variable", clef="auto_reload", valeur=False)
+    Configue().update(section="variable", clef="auto_reload", valeur=False)
+    # Configue().update(section="config", clef="opacity", valeur=15)
 
     Functions().GEN_SVG()
 
     app = QtWidgets.QApplication(sys.argv)
-    app.processEvents()
 
     splash_screen = SplashScreen()
     splash_screen.open()
+
+    app.processEvents()
 
     fen = main()
     fen.show()

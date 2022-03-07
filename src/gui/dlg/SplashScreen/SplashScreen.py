@@ -74,8 +74,8 @@ class SplashScreen(splash_screen.Ui_SplashScreen, QtWidgets.QDialog):
         self.lb_ico.setPixmap(QtGui.QPixmap("src/assets/img/main/inari.svg"))
         self.lb_ico.setScaledContents(True)
 
-        self.lb_titre.setText(config.configue().cfg["infos"]["nom"])
-        self.lb_description.setText(config.configue().cfg["infos"]["description"])
+        self.lb_titre.setText(Configue().cfg["infos"]["nom"])
+        self.lb_description.setText(Configue().cfg["infos"]["description"])
     def IN_CONNECTIONS(self):
         pass
     def IN_ACT(self):

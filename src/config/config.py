@@ -2,12 +2,10 @@ import json
 import pyinstaller_versionfile
 import os.path
 
-from src.config.vrb import cfg_config, version_file
 
-
-class configue:
+class Configue:
     def __init__(self):
-        if not os.path.isfile(cfg_config):
+        if not os.path.isfile("src/config/config.json"):
             self.cfg = {
                 "infos": {"nom": "Je suis un test de nommage",
                           "description": "Je suis un test de description",
@@ -15,23 +13,23 @@ class configue:
                           "auteur": "ZP6177",
                           "compagnie": "ZP6177"},
                 "config": {"curseur": "TheR7angelo",
-                           "theme": "defaut",
+                           "theme": "default",
                            "font": "Berlin Sans FB Demi",
                            "widht": 1200,
                            "height": 800,
                            "opacity": 0.96},
                 "variable": {"auto_reload": False}
             }
-            with open(cfg_config, "w") as output:
+            with open("src/config/config.json", "w") as output:
                 json.dump(self.cfg, output, indent=4)
             self.write_version_file()
         else:
-            with open(cfg_config) as json_file:
+            with open("src/config/config.json") as json_file:
                 self.cfg = json.load(json_file)
 
     def write_version_file(self):
         pyinstaller_versionfile.create_versionfile(
-            output_file=version_file,
+            output_file="src/config/version_file.txt",
             version=self.cfg["infos"]["version"],
             company_name=self.cfg["infos"]["compagnie"],
             file_description=self.cfg["infos"]["description"],
@@ -51,10 +49,11 @@ class configue:
         :param valeur: string || string || bool
         :return: None
         """
-        with open(cfg_config, "r+") as output:
+        with open("src/config/config.json", "r+") as output:
             self.cfg[section][clef] = valeur
             output.seek(0)
             json.dump(self.cfg, output, indent=4)
             output.truncate()
 
         self.write_version_file()
+
