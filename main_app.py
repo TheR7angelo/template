@@ -35,8 +35,16 @@ class main(Ui_main, QtWidgets.QWidget):
             [self.in_base, "Configuration des éléments principaux"],
             [lambda: self.setupUi(self), "Initialisation de l'interface graphique"],
             [self.in_classe, "Application du theme"],
-            [self.in_wg, "Configuration de base des Widgets"]
+            [self.in_wg, "Configuration de base des Widgets"],
+            [self.in_connections, "Ajout des boutons"]
         )
+
+        ### CREATION DES EVENT ###
+        self.evt = Event(self)
+        self.mousePressEvent = self.evt.mousePressEvent
+        self.mouseDoubleClickEvent = self.evt.mouseDoubleClickEvent
+        self.mouseMoveEvent = self.evt.mouseMoveEvent
+        self.mouseReleaseEvent = self.evt.mouseReleaseEvent
 
         splash_screen.close()
 
@@ -45,9 +53,23 @@ class main(Ui_main, QtWidgets.QWidget):
         self.setWindowTitle(self.cfg["infos"]["nom"])
         self.setWindowIcon(QtGui.QPixmap(f"{Img().main()}th3.svg"))
         self.setWindowOpacity(self.cfg["config"]["opacity"])
-        # self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
+        self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
-        #self.e_resize_screen()
+        self.e_resize_screen()
+
+    def in_classe(self):
+
+        ### QFrame ###
+        frame.Menu(self.fr_menu_top).top()
+        frame.Cadre(self.fr_main, shadow=Shadow().ombre_portee(self)).th2()
+        frame.Menu(self.fr_menu_bottom).bottom()
+        ### /QFrame ###
+
+        ### QLabel ###
+        label.Base(self.lb_mt_ico).ico_main()
+        label.Base(self.lb_mt_nom, font_size=Font().h3()).tr()
+        label.Base(self.lb_mb_version).tr()
+        ### \QLabel ###
 
     def in_wg(self):
         ### Base ###
@@ -81,19 +103,10 @@ class main(Ui_main, QtWidgets.QWidget):
             )
             self.hlay_menu_bottom.addWidget(self.size_grip)
 
-    def in_classe(self):
-
-        ### QFrame ###
-        frame.Menu(self.fr_menu_top).top()
-        frame.Cadre(self.fr_main, shadow=Shadow().ombre_portee(self)).th2()
-        frame.Menu(self.fr_menu_bottom).bottom()
-        ### /QFrame ###
-
-        ### QLabel ###
-        label.Base(self.lb_mt_ico).ico_main()
-        label.Base(self.lb_mt_nom, font_size=Font().h3()).tr()
-        label.Base(self.lb_mb_version).tr()
-        ### \QLabel ###
+    def in_connections(self):
+        self.pb_mt_reduire.clicked.connect(lambda: self.evt.e_reduire())
+        self.pb_mt_agrandir.clicked.connect(lambda: self.evt.e_agrandir())
+        self.pb_mt_quitter.clicked.connect(lambda: self.evt.e_cacher())
 
     def in_tray(self):
         ### Actions ###
@@ -122,11 +135,29 @@ class main(Ui_main, QtWidgets.QWidget):
             splash_screen.pg_chargement.setValue((splash_screen.pg_chargement.value() + 100 / len(args)) - 1)
 
             fct[0]()
-            time.sleep(2)
 
         splash_screen.lb_chargement.setText("Lancement de l'application")
         splash_screen.pg_chargement.setValue(100)
         time.sleep(2)
+
+    def e_resize_screen(self):
+        # if config.resize:
+        #     self.setMinimumWidth(config.widht)
+        #     self.setMinimumHeight(config.height)
+        # else:
+        #     self.setFixedWidth(config.widht)
+        #     self.setFixedHeight(config.height)
+
+        self.setMinimumWidth(self.cfg["config"]["widht"])
+        self.setMinimumHeight(self.cfg["config"]["height"])
+
+    def e_quitter(self):
+        """Permet de quitter l'application"""
+        # if not config.auto_close:
+        #     self.hide()
+        # elif config.auto_close:  # DLG_Rep().QUITTER()
+        #     app.quit()
+        app.quit()
 
     def e_quitter_tray(self):
         self.show()
@@ -145,8 +176,10 @@ class main(Ui_main, QtWidgets.QWidget):
 
 if __name__ == "__main__":
 
-    Configue().update(section="variable", clef="auto_reload", valeur=False)
+    Configue().update(section="variable", clef="auto_reload", valeur=True)
     # Configue().update(section="config", clef="opacity", valeur=15)
+
+
 
     Functions().GEN_SVG()
 

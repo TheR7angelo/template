@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80cdf0a1-fc69-4079-87f2-5f6f6d58c7fc" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/lib/palettes/textFormat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/label/build.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/label/label.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/events/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/events/event.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build/mods/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/build/mods/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/version_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/version_file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/palettes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/palettes/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/frame/build.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/frame/build.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/vb_wg.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/vb_wg.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/palettes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/gui/events" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -66,11 +59,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\template\src\gui\events" />
       <recent name="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\template\src\lib\palettes" />
       <recent name="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\template\src\widgets\label" />
       <recent name="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\template\src\gui\ui\main" />
       <recent name="C:\Users\ZP6177\Creative Cloud Files\Programmation\Projets Python\template\src\assets\img\divers" />
-      <recent name="C:\Users\ZP6177\Creative Cloud Files\Programmation\Projets Python\template\src\assets\img\ui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\Projets Python\template\src\widgets" />
@@ -119,7 +112,7 @@
       <updated>1646639227808</updated>
       <workItem from="1646639229732" duration="21221000" />
       <workItem from="1646678219140" duration="296000" />
-      <workItem from="1646678592987" duration="7694000" />
+      <workItem from="1646678592987" duration="9506000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1646680394791</created>
@@ -142,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646685422114</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init">
+      <created>1646686773822</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646686773822</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +165,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/template$main_app.coverage" NAME="main_app Coverage Results" MODIFIED="1646686733990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/template$main_app.coverage" NAME="main_app Coverage Results" MODIFIED="1646688523881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

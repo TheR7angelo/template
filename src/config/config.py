@@ -15,8 +15,8 @@ class Configue:
                 "config": {"curseur": "TheR7angelo",
                            "theme": "default",
                            "font": "Berlin Sans FB Demi",
-                           "widht": 1200,
-                           "height": 800,
+                           "widht": 1066,
+                           "height": 600,
                            "opacity": 0.96},
                 "variable": {"auto_reload": False}
             }
