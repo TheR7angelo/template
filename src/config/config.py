@@ -7,9 +7,9 @@ class Configue:
     def __init__(self):
         if not os.path.isfile("src/config/config.json"):
             self.cfg = {
-                "infos": {"nom": "Je suis un test de nommage",
+                "infos": {"nom": "Template",
                           "description": "Je suis un test de description",
-                          "version": "0.0",
+                          "version": "0.1",
                           "auteur": "ZP6177",
                           "compagnie": "ZP6177"},
                 "config": {"curseur": "TheR7angelo",

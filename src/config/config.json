@@ -1,8 +1,8 @@
 {
     "infos": {
-        "nom": "Je suis un test de nommage",
+        "nom": "Template",
         "description": "Je suis un test de description",
-        "version": "0.0",
+        "version": "0.1",
         "auteur": "ZP6177",
         "compagnie": "ZP6177"
     },
@@ -12,7 +12,7 @@
         "font": "Berlin Sans FB Demi",
         "widht": 1200,
         "height": 800,
-        "opacity": 15
+        "opacity": 0.96
     },
     "variable": {
         "auto_reload": false

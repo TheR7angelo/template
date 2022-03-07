@@ -1,6 +1,7 @@
 from src.config.config import Configue
 from src.lib.palettes import *
 
+cfg = Configue().cfg
 
 ########################
 ##     DIMENSIONS     ##
@@ -12,7 +13,7 @@ HEIGHT = Dim().h9()
 ####################
 ##     POLICE     ##
 ####################
-font = Configue().cfg["config"]["font"]
+font = cfg["config"]["font"]
 font_size = Font().h4()
 font_size_HD = Font().h3()
 
@@ -36,7 +37,7 @@ text_visible = True
 val_min = 0
 val_max = 100
 val_step = 1
-# TEXT_FORMAT = TextFormat().plain()
+text_format = TextFormat().plain()
 word_wrap = True
 
 

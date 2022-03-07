@@ -17,4 +17,4 @@ from src.lib.palettes.scroll import Scroll
 # from src.lib.palettes.SelectionMode import SelectionMode
 from src.lib.palettes.shadow import Shadow
 from src.lib.palettes.styleBase import StyleBase
-# from src.lib.palettes.TextFormat import TextFormat
+from src.lib.palettes.textFormat import TextFormat

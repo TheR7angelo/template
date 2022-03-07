@@ -5,7 +5,7 @@ import shutil
 
 from PySide6 import QtCore, QtGui
 
-from src.config import config
+from src.config.config import Configue
 from src.lib.palettes import *
 
 
@@ -13,6 +13,7 @@ class Functions:
     def __init__(self, **kwargs):
 
         self.kwargs = kwargs
+        self.cfg = Configue().cfg
 
     def CUR(self):
 
@@ -51,17 +52,17 @@ class Functions:
             if width is not None: wg.setFixedWidth(width)
             if height is not None: wg.setFixedHeight(height)
 
-    # def FONT(self):
-    #     font = self.kwargs.get("font")
-    #     if font is None: font = config.font
-    #
-    #     font_size = self.kwargs.get("font_size")
-    #     if font_size is None: return
-    #
-    #     ft = QtGui.QFont()
-    #     ft.setFamily(font)
-    #     ft.setPointSize(font_size)
-    #     return ft
+    def SET_FONT(self, *args, font=Configue().cfg['config']['font'], font_size=None, rtn=False):
+        if not font_size: return
+
+        ft = QtGui.QFont()
+        ft.setFamily(font)
+        ft.setPointSize(font_size)
+
+        if rtn: return ft
+
+        for wg in args:
+            wg.setFont(ft)
 
     def ADD_QACTION(self, tray, ico=None, ico_rgb=None, txt="", shortcut_txt="", status_tip="", size=None, fct=None, sht_1=None, sht_2=None, sht_3=None):
         if size is None: size=12

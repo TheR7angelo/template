@@ -27,14 +27,14 @@ class main(Ui_main, QtWidgets.QWidget):
         self.tray_menu = QtWidgets.QMenu()
         self.tray_menu.setAttribute(QtCore.Qt.WA_TranslucentBackground)
 
-        # ### VARIABLES DE BASES ###
-        # self.win_state = QtCore.Qt.WindowNoState
-        #
+        ### VARIABLES DE BASES ###
+        self.win_state = QtCore.Qt.WindowNoState
+
         ### FONCTIONS AU LANCEMENT ###
         self.setup(
             [self.in_base, "Configuration des éléments principaux"],
             [lambda: self.setupUi(self), "Initialisation de l'interface graphique"],
-            [self.in_classe, "Initialisation du themes"],
+            [self.in_classe, "Application du theme"],
             [self.in_wg, "Configuration de base des Widgets"]
         )
 
@@ -84,8 +84,16 @@ class main(Ui_main, QtWidgets.QWidget):
     def in_classe(self):
 
         ### QFrame ###
-
         frame.Menu(self.fr_menu_top).top()
+        frame.Cadre(self.fr_main, shadow=Shadow().ombre_portee(self)).th2()
+        frame.Menu(self.fr_menu_bottom).bottom()
+        ### /QFrame ###
+
+        ### QLabel ###
+        label.Base(self.lb_mt_ico).ico_main()
+        label.Base(self.lb_mt_nom, font_size=Font().h3()).tr()
+        label.Base(self.lb_mb_version).tr()
+        ### \QLabel ###
 
     def in_tray(self):
         ### Actions ###
